@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --bg-color: #ffffff; /* Default light background */
+  --text-color: #000000; /* Default light text */
+}
+
+.light {
+  --bg-color: #ffffff; /* Light background */
+  --text-color: #000000; /* Dark text */
+}
+
+.dark {
+  --bg-color: #1a202c; /* Dark background */
+  --text-color: #ffffff; /* Light text */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+
+/* Add these styles for the button */
+
+.btn-slide-bg {
+  position: relative;
+  overflow: hidden; /* Hide the sliding effect */
+  color: white; /* Text color */
+  transition: color 0.4s ease; /* Smooth text color transition */
+}
+
+/* Create the sliding effect */
+.btn-slide-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white; /* Background color on hover */
+  z-index: 0; /* Behind the text */
+  transition: transform 0.4s ease; /* Smooth transition for sliding */
+  transform: translateX(-100%); /* Start position */
+}
+
+/* Change the text color on hover */
+.btn-slide-bg:hover {
+  color: black; /* Change text color to black */
+}
+
+/* Slide in effect on hover */
+.btn-slide-bg:hover::before {
+  transform: translateX(0); /* Slide in */
+}
+
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom {
+  animation: zoom 1s ease-in-out;
+}

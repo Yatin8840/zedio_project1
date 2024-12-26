@@ -1,0 +1,160 @@
+/* Footer Container */
+* {
+  box-sizing: border-box; /* Added to handle padding and borders */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer {
+  background-image: url("https://zidio.in/assets/images/home-1/footer-bg.jpg");
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.logo_img {
+  height: 50px;
+  width: 220px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-company-info {
+  max-width: 350px;
+  flex: 1 1 100%; /* Full width on small screens */
+}
+
+.footer-company-info p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.discover-btn {
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-right: 50px;
+  flex: 1 1 200px; /* Adjust for responsive */
+  min-width: 200px; /* Minimum width for links */
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #a8b9c6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-newsletter {
+  flex: 1 1 200px; /* Adjust for responsive */
+  min-width: 200px; /* Minimum width for newsletter */
+}
+
+.footer-newsletter h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-newsletter button {
+  padding: 10px;
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-top: 1px solid #2c3e50;
+}
+
+.footer-bottom p {
+  margin: 20px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #2979ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .footer-links {
+    margin-right: 0; /* Remove margin on smaller screens */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add some space between sections */
+  }
+
+  .footer-company-info {
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add some space below */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stack items in the footer */
+    align-items: center; /* Center align footer items */
+  }
+
+  .footer-bottom p {
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+
+  .social-icons {
+    justify-content: center; /* Center align social icons */
+  }
+}

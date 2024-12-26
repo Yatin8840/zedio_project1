@@ -1,0 +1,62 @@
+.background {
+    background: url('https://cdn.wallpaper.tn/large/Computer-Science-Wallpaper-52477.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px; /* This rule might be overriding the font size */
+  }
+  .breadcrumb {
+    border: 1px solid white;
+    padding: 5px 30px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+    margin-left: 7%;
+  }
+  
+  .hero-image {
+    max-width: 40%;
+    margin-top: 50px;
+  }
+  
+  .hero-image img {
+    border-radius: 50%;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 7%;
+  }
+  
+  .logo-text span {
+    color: #4a90e2;
+  }
+     
+     
+     
+  
+  
